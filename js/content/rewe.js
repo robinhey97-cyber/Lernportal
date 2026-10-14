@@ -30,7 +30,7 @@ window.CONTENT.push({
   topics: [
     /* ------------------------------------------------------------------ */
     {
-      id: 'rewe-bilanz', title: 'Inventur, Inventar & Bilanz', minutes: 20,
+      id: 'rewe-bilanz', modul: ['KBM.08.01', 'KBM.08.02'], title: 'Inventur, Inventar & Bilanz', minutes: 20,
       summary: 'Vermögen und Schulden erfassen, Reinvermögen berechnen, die Bilanz lesen.',
       lesson: `
 <h2>Warum Buchführung?</h2>
@@ -93,7 +93,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'rewe-buchen', title: 'Buchen auf Bestandskonten', minutes: 25,
+      id: 'rewe-buchen', modul: ['KBM.08.02'], title: 'Buchen auf Bestandskonten', minutes: 25,
       summary: 'Soll und Haben, Buchungssätze und die vier Arten von Geschäftsfällen.',
       lesson: `
 <h2>Von der Bilanz zum Konto</h2>
@@ -168,7 +168,7 @@ Aktivkonten verhalten sich wie die Aktivseite der Bilanz (links = Soll), Passivk
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'rewe-ust', title: 'Umsatzsteuer: Vorsteuer, Zahllast & Buchen', minutes: 25,
+      id: 'rewe-ust', modul: ['KBM.08.04'], title: 'Umsatzsteuer: Vorsteuer, Zahllast & Buchen', minutes: 25,
       summary: 'Brutto/Netto rechnen, Ein- und Ausgangsrechnungen buchen, Zahllast ermitteln.',
       lesson: `
 <h2>Das Prinzip der Umsatzsteuer</h2>
@@ -229,7 +229,7 @@ Umsatzsteuer 18.600 € <b>an</b> Vorsteuer 12.450 € + Bank 6.150 €</div>
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'rewe-kalk', title: 'Rabatt, Skonto & Kalkulation', minutes: 25,
+      id: 'rewe-kalk', modul: ['KBM.01.04', 'KBM.05.02'], title: 'Rabatt, Skonto & Kalkulation', minutes: 25,
       summary: 'Vom Listenpreis zum Einstandspreis und weiter bis zum Verkaufspreis.',
       lesson: `
 <h2>Rabatt und Skonto – nicht verwechseln</h2>

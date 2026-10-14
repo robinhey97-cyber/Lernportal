@@ -5,7 +5,7 @@ window.CONTENT.push({
   topics: [
     /* ------------------------------------------------------------------ */
     {
-      id: 'kbp-kunde', title: 'Kundenorientierung & Kundenbindung', minutes: 20,
+      id: 'kbp-kunde', modul: ['KBM.07.01'], title: 'Kundenorientierung & Kundenbindung', minutes: 20,
       summary: 'Bedürfnisse, Kundenzufriedenheit, Bindungsinstrumente, ABC-Analyse.',
       lesson: `
 <h2>Bedürfnis – Bedarf – Nachfrage</h2>
@@ -56,7 +56,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'kbp-marketing', title: 'Marketing-Mix & Marktforschung', minutes: 20,
+      id: 'kbp-marketing', modul: ['KBM.07.01'], title: 'Marketing-Mix & Marktforschung', minutes: 20,
       summary: '4 P, Produktlebenszyklus, AIDA, Primär-/Sekundärforschung.',
       lesson: `
 <h2>Marketing – mehr als Werbung</h2>
@@ -116,7 +116,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'kbp-beschwerde', title: 'Reklamation & Beschwerdemanagement', minutes: 20,
+      id: 'kbp-beschwerde', modul: ['KBM.07.04'], title: 'Reklamation & Beschwerdemanagement', minutes: 20,
       summary: 'Beschwerden als Chance, strukturierter Ablauf, Quoten und Auswertung.',
       lesson: `
 <h2>Beschwerde oder Reklamation?</h2>

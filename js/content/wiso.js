@@ -5,7 +5,7 @@ window.CONTENT.push({
   topics: [
     /* ------------------------------------------------------------------ */
     {
-      id: 'wiso-ausbildung', title: 'Ausbildung, Umschulung & Berufsbildungsgesetz', minutes: 20,
+      id: 'wiso-ausbildung', modul: ['KBM.01.03'], title: 'Ausbildung, Umschulung & Berufsbildungsgesetz', minutes: 20,
       summary: 'Rechte und Pflichten, Probezeit, Kündigung, Urlaub.',
       lesson: `
 <h2>Rechtsgrundlagen</h2>
@@ -71,7 +71,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'wiso-sozial', title: 'Sozialversicherung & Gehaltsabrechnung', minutes: 25,
+      id: 'wiso-sozial', modul: ['KBM.10.04'], title: 'Sozialversicherung & Gehaltsabrechnung', minutes: 25,
       summary: 'Die fünf Zweige, Beiträge, Brutto–Netto.',
       lesson: `
 <h2>Die fünf Zweige der gesetzlichen Sozialversicherung</h2>
@@ -129,7 +129,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'wiso-vertrag', title: 'Rechtsgeschäfte & Kaufvertrag', minutes: 30,
+      id: 'wiso-vertrag', modul: ['KBM.02.01', 'KBM.02.02', 'KBM.05.03'], title: 'Rechtsgeschäfte & Kaufvertrag', minutes: 30,
       summary: 'Geschäftsfähigkeit, Vertragsschluss, Mängel, Lieferungs- und Zahlungsverzug.',
       lesson: `
 <h2>Rechts- und Geschäftsfähigkeit</h2>

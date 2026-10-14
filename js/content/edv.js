@@ -5,7 +5,7 @@ window.CONTENT.push({
   topics: [
     /* ------------------------------------------------------------------ */
     {
-      id: 'edv-hardware', title: 'Hardware, Software & EVA-Prinzip', minutes: 15,
+      id: 'edv-hardware', modul: ['KBM.03.01'], title: 'Hardware, Software & EVA-Prinzip', minutes: 15,
       summary: 'Wie ein Computer arbeitet, Speicher, Betriebssystem, Peripherie.',
       lesson: `
 <h2>Das EVA-Prinzip</h2>
@@ -65,7 +65,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'edv-datenschutz', title: 'Datenschutz & Datensicherheit', minutes: 25,
+      id: 'edv-datenschutz', modul: ['KBM.03.03'], title: 'Datenschutz & Datensicherheit', minutes: 25,
       summary: 'DSGVO, personenbezogene Daten, Schutzziele, Backup, Phishing.',
       lesson: `
 <h2>Datenschutz ≠ Datensicherheit</h2>
@@ -141,7 +141,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'edv-excel', title: 'Tabellenkalkulation (Excel)', minutes: 30,
+      id: 'edv-excel', modul: ['KBM.03.09', 'KBM.03.10'], title: 'Tabellenkalkulation (Excel)', minutes: 30,
       summary: 'Formeln, Funktionen, absolute und relative Bezüge, WENN, SUMMEWENN.',
       lesson: `
 <h2>Grundlagen</h2>
@@ -217,7 +217,7 @@ window.CONTENT.push({
     },
     /* ------------------------------------------------------------------ */
     {
-      id: 'edv-brief', title: 'Geschäftsbrief nach DIN 5008', minutes: 15,
+      id: 'edv-brief', modul: ['KBM.03.07'], title: 'Geschäftsbrief nach DIN 5008', minutes: 15,
       summary: 'Aufbau und Gestaltungsregeln für professionelle Geschäftsbriefe.',
       lesson: `
 <h2>Warum DIN 5008?</h2>

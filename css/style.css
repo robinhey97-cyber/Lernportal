@@ -142,3 +142,9 @@ button.opt:disabled{cursor:default}
 .form{display:flex;gap:16px;flex-wrap:wrap;align-items:end}
 .form select{font:inherit;padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)}
 .form label{display:block;font-size:.85rem;color:var(--mute);margin-bottom:4px}
+
+.mod{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:9px 0;border-bottom:1px solid var(--line)}
+.mod:last-child{border-bottom:0}
+.mod .code{font-weight:700;color:var(--brand);min-width:48px}
+.mod .mn{flex:1;min-width:200px}
+.tag{text-decoration:none}

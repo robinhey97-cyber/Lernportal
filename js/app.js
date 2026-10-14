@@ -392,6 +392,7 @@ function topic(id, tab) {
   setNav('home');
   const head = `<div class="crumbs"><a href="#/">Start</a> › <a href="#/fach/${t.subject.id}">${esc(t.subject.name)}</a> › ${esc(t.title)}</div>
     <h1>${esc(t.title)}</h1>
+    ${(t.modul || []).length ? `<div class="tags" style="margin:-4px 0 8px">${t.modul.map(c => `<span class="tag">${c}</span>`).join('')}</div>` : ''}
     <div class="tabs"><a href="#/thema/${id}/lektion" class="${tab === 'lektion' ? 'on' : ''}">📖 Lektion</a>
       <a href="#/thema/${id}/ueben" class="${tab === 'ueben' ? 'on' : ''}">✍️ Üben</a>
       <a href="#/thema/${id}/test" class="${tab === 'test' ? 'on' : ''}">🎯 Test</a></div>`;
@@ -449,6 +450,23 @@ function examSetup() {
   };
 }
 
+function modules() {
+  setNav('module');
+  const by = {};
+  allTopics().forEach(t => (t.modul || []).forEach(c => { (by[c] = by[c] || []).push(t); }));
+  const total = (window.MODULES || []).reduce((n, b) => n + b.items.length, 0);
+  const have = Object.keys(by).length;
+  app.innerHTML = `<h1>📚 Module</h1>
+    <p class="muted">Deine Lernmatrix: Hier siehst Du, zu welchen Modulen es schon Lernstoff gibt (${have} von ${total}). Die Reihenfolge ist egal – wähle das Modul, das in der Schule dran war.</p>
+    ${(window.MODULES || []).map(b => `<h2>${esc(b.block)}</h2><div class="card" style="padding:6px 16px">${b.items.map(([c, n]) => {
+      const ts = by[c] || [];
+      return `<div class="mod"><span class="code">${c.replace('KBM.', '')}</span><span class="mn">${esc(n)}</span>${ts.length
+        ? ts.map(t => `<a class="tag ok" href="#/thema/${t.id}/lektion">${t.subject.icon} ${esc(t.title)}</a>`).join('')
+        : '<span class="tag">noch nicht gebaut</span>'}</div>`;
+    }).join('')}</div>`).join('')}`;
+}
+function allTopics() { return Object.values(TOPICS); }
+
 /* ---------- Router ---------- */
 function route() {
   stopTimer();
@@ -459,6 +477,7 @@ function route() {
   if (a === 'mix') return startMix(b);
   if (a === 'wiederholen') return startReview();
   if (a === 'pruefung') return examSetup();
+  if (a === 'module') return modules();
   home();
 }
 window.addEventListener('hashchange', route);
